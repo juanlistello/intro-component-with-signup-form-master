@@ -1,0 +1,150 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic style */
+body {
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%); 
+    background-image: url(./images/bg-intro-mobile.png);  
+    color: white;
+    line-height: 1.5rem;
+}
+
+.container {
+    max-width: 700px;
+    padding: 4rem 1.5rem;
+    margin: 0 auto;
+    text-align: center; 
+
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* LEFT */
+.left h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+.left p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+/* Right */
+.right {
+    display: flex;
+    flex-direction: column;
+}
+/* right */
+.right .button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background:hsl(248, 32%, 49%);
+    border-radius: 8px;
+    padding: 1.2rem 3rem;
+    font-size: 0.9rem;
+    box-shadow:1px 8px 3px 0px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+    transition: background 0.5s ease;
+}
+.button:hover {
+    background:hsl(247, 32%, 36%);
+}
+
+
+.right .form {
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    box-shadow:1px 10px 3px 0px rgba(0,0,0,0.15);
+    color: gray;
+}
+.form input {
+    outline: none;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    border: solid 0.5px rgb(110, 110, 110, 0.3);
+    font-weight: 600;
+    color: rgb(110, 110, 110);
+    margin: 0.5rem 0;
+}
+.form input:focus {
+    border: solid 1px hsl(247, 32%, 36%, 0.5);
+}
+
+.form #submit {
+    cursor: pointer;
+    padding: 1.3rem;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.8px;
+    font-size: 0.9rem;
+    box-shadow:inset 1px -5px 3px 0px rgba(0,0,0,0.2);
+    transition: background 0.5s ease;
+}
+#submit:hover {
+    background: hsl(154, 57%, 44%);
+}
+.form p {
+    padding: 0.2rem 1.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-weight: 400;
+}
+.form a {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* media querries */
+@media (min-width:700px)  {
+    .left h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+
+
+}
+
+@media (min-width:916px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 2rem 5rem;
+        height: 100vh;
+        display: flex;
+        justify-items: start;
+        align-items: center;
+    }
+    .left {
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .left h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .left p {
+        font-size: 1rem;
+    }
+    
+
+}
